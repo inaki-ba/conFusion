@@ -1,12 +1,12 @@
 .row-header {
 	margin: 0px auto;
-	paddint: 0px auto;
+	padding: 0px auto;
 }
 
 .row-content {
 	margin: 0xpx auto;
 	padding: 50px 0px 50px 0px;
-	border-bottom: 1px ridge;
+	border-bottom:0px ridge;
 	min-height: 400px;
 }
 
@@ -29,7 +29,7 @@
 	color: #0f0f0f;
 }
 
-body{
+body {
 	padding: 50px 0px 0px 0px;
 	z-index: 0;
 }
