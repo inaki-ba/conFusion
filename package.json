@@ -8,14 +8,22 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
-  "author": "",
+  "author": "Inaki Blanco-Acosta",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.2.2"
+    "lite-server": "^2.3.0"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "font-awesome": "^4.7.0",
     "mongodb": "^3.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inaki-ba/conFusion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inaki-ba/conFusion/issues"
+  },
+  "homepage": "https://github.com/inaki-ba/conFusion#readme"
 }
