@@ -58,17 +58,6 @@
                             <label class="col-2 col-sm-1 btn"><input type="radio" id="nguests" name="nguests"> 5</label>
                             <label class="col-2 col-sm-1 btn"><input type="radio" id="nguests" name="nguests"> 6</label>
                         </div>
-                         <!--div class="form-group row">
-                            <label for="smoking" class="col-2 col-sm-2 col-form-label">Section </label>
-                        </div-->
-
-                        <!--div class="col-12 col-sm-11 offset-sm-1">
-                            <div class="btn-group" role="group">
-                                <a role="button" class="btn btn-primary" href="tel:+852 1234 5678"><i class="fa fa-phone"></i> Call</a>
-                            
-                                <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i> Email</a>
-                            </div>
-                        </div-->
                         <div class="form-group row">
                             <label for="smoking" class="col-3 col-form-label">Section</label> 
                             <div class="col-9">
@@ -82,9 +71,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!--div class="form-group row">
-                            <label for="smoking" class="col-sm-2 col-form-label">Section</label>
-                        </div-->
                         <div class="form-group row">
                             <label for="date" class="col-sm-2 col-2 col-form-label">Date and Time</label>
                             <div class="col-5 col-sm-5">
@@ -203,6 +189,14 @@
                     </a>
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next"><span class="carousel-control-next-icon"></span>
                     </a>
+                    <div class="btn-group" id="carouselButtons">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -349,6 +343,18 @@
     <script>
         $(document).ready(function() {
             $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#mycarousel").carousel({interval: 2000});
+            $('#carousel-pause').click(function() {
+                $('#mycarousel').carousel('pause');
+            });
+            $('#carousel-play').click(function() {
+                $('#mycarousel').carousel('cycle');
+            });
         });
     </script>
 </body>
